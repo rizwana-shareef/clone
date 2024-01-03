@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./example2.css">
+   
+</head>
+<body>
+    <main  class="parent1">
+        <div class="div1">
+            <div id ="box1"></div>
+            <div class= "box2"> </div>
+        </div>
+        <!-- <div class="div2">
+            <div class="box3"></div>
+                <div class="box4"></div>   
+        </div> -->
+        <div class="div2">
+            <div class="box2"></div>
+            <div class="box2"></div>
+        </div>
+    </main>
+    <script>
+    //  var  a=document.querySelector("#box1");
+    //     a.style.backgroundColor="orange";
+    //     var  b=document.querySelectorAll(".box2");
+    //     // b.style.backgroundColor="red";
+
+    //     function color(x) {
+    //         x.style.backgroundColor="red";
+    //     }
+    //     b.forEach(color);
+    //    
+    //     var d=document.querySelector(".div2");
+    //     d.style.backgroundColor="orange";
+    var c=document.querySelectorAll(".div1");
+        // c.style.backgroundColor="pink";
+
+        var x=Array.from(c[0].children);
+        console.log(x);
+        x[0].style.backgroundColor="red";
+        var main=document.querySelector(".parent1");
+        console.log(main);
+        var main=document.parentElement;
+        console.log(parent);
+        parent.style.backgroundColor="green";
+            
+
+        
+
+        // var box=document.getElementById("box1");
+
+        // // box.style.backgroundColor="red";
+        
+        // color(box);
+        //     var a=Array.from(document.getElementsByClassName("box2"));
+        //     // a[0].style.backgroundcolor="red";
+        //     a.forEach(color);
+        //     // color(box);
+
+      
+        
+        
+    
+</script>
+</body>
+</html>
